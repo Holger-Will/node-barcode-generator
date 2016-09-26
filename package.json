@@ -1,0 +1,36 @@
+{
+  "name": "node-barcode-generator",
+  "version": "0.1.0",
+  "description": "barcode genarator framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holger-Will/node-barcode-generator.git"
+  },
+  "keywords": [
+    "barcode",
+    "genrator",
+    "renderer",
+    "framework"
+  ],
+  "author": "Holger Will",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Holger-Will/node-barcode-generator/issues"
+  },
+  "homepage": "https://github.com/Holger-Will/node-barcode-generator#readme",
+  "devDependencies": {
+    "2of5-interleaved-encoder": "^1.0.0",
+    "barcode-renderer-svg": "*",
+    "chai": "^3.5.0",
+    "code-128-encoder": "*",
+    "code-39-encoder": "*",
+    "mocha": "^3.0.2"
+  }
+}

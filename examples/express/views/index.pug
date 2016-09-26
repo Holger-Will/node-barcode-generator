@@ -1,0 +1,26 @@
+html
+  head
+    title= title
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower")
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono")
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Modak")
+  style.
+    body{font-family:'Roboto Mono'}
+    svg{margin:5px;color:#333;background:white;padding:5px;border:1px solid black;}
+    .white{background:white}
+    .funny{font-family: 'Indie Flower';}
+    svg:first-of-type{font-family:'Modak'}
+    svg:nth-of-type(4){font-family: 'Indie Flower';}
+    svg:nth-of-type(3){background:yellow;color:darkgreen}
+    svg:nth-of-type(6){background:none}
+    svg:nth-of-type(5){background:orange;color:darkblue}
+  body(style="background:#ddd")
+    h2 Code 39
+    :barcode1 ABC123456
+    :barcode1(height=150 class="funny" simpleText=true baseline=40) barcode
+    h2 code 128
+    :barcode2( width=400 padding=2 baseline=25) ABC123456
+    :barcode2(height=150 width=200 simpleText=true baseline=45 quitezone=[60,60]) ABC123456
+    h2 2of5 interleaved
+    :barcode3( width=200 height=130 padding=2 baseline=30 background="beige" quitezone=[10,10]) 123456789
+    :barcode3( width=250 height=60 class="white" simpleText=true baseline=15 background="none") 123456789

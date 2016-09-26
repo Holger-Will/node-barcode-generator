@@ -1,0 +1,19 @@
+{
+  "name": "barcode-express-example",
+  "version": "0.1.0",
+  "description": "an example server using the barcode framwork",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Holger Will",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "2of5-interleaved-encoder": "*",
+    "barcode-renderer-svg": "*",
+    "code-128-encoder": "*",
+    "code-39-encoder": "*",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
