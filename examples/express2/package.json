@@ -1,0 +1,20 @@
+{
+  "name": "serialcode",
+  "version": "0.1.0",
+  "description": "serial number generator and printer",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "2of5-interleaved-encoder": "^1.0.0",
+    "barcode-renderer-svg": "^1.2.0",
+    "code-128-encoder": "^2.3.0",
+    "code-39-encoder": "^1.0.0",
+    "express": "^4.14.0",
+    "node-barcode-generator": "^0.1.0",
+    "pug": "^2.0.0-beta6"
+  }
+}

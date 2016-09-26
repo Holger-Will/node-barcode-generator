@@ -1,0 +1,17 @@
+html
+  head
+    title serialnumbers
+    style.
+      body{margin:0px;padding:0px}
+      .page{height:29.6cm;width:21cm;padding-left:7mm;padding-top:15mm;border:1px solid black;box-sizing:border-box}
+      svg{padding:10px;font-family:monospace;margin-right:2.5mm;border:1px solid black}
+      @media print{
+        .page{border-style:none}
+        svg{border-style:none}
+      }
+  body
+    div.page
+      - var n = parseInt(start)
+      while n < parseInt(start)+27
+        !=(barcode(pad(n,10),{simpleText:true,width:218,height:91.5,padding:2,baseline:20}))
+        - n++
